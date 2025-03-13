@@ -55,18 +55,18 @@ Cadence Virtuoso支持以上*全部*三种语言进行器件建模。但其中Ve
 + 点击Toolbar中的`Check & Save`按钮#box(baseline: 20%, image("../figures/button_check_and_save.png"), width: 12pt)保存代码。
 + 在弹出的如@create_symbol_veriloga 所示的对话框中。点击`OK`按钮定制Symbol，即采样开关在原理图中调用时的外观。
   #figure(
-    image("../figures/create_symbol_veriloga.png", width: 50%),
+    image("../figures/create_symbol_veriloga.png", width: 30%),
     caption: [保存VerilogA代码后弹出的对话框],
   ) <create_symbol_veriloga>
 + 如果你已经在@ideal_switch 中创建了Symbol，那么这里将会弹出一个如@create_symbol_schematic 所示的对话框，询问是否覆盖之前创建的Symbol，这里点击`Cancel`按钮，并直接点击右上角的`X`按钮关闭Schematic视图。反之则进入下一步骤。
   #figure(
-    image("../figures/create_symbol_schematic.png", width: 50%),
+    image("../figures/create_symbol_schematic.png", width: 30%),
     caption: [保存Schematic代码后弹出的对话框],
   ) <create_symbol_schematic>
 // 此处增加signal_type修改
 + 在弹出的对话框中，修改`Pin Specifications`中的端口位置使之如@symbol_pin_spec_veriloga 所示 (也可以保持默认，但下一步的外观会有所不同，功能上没有影响)。点击`OK`按钮。
   #figure(
-    image("../figures/symbol_pin_spec_veriloga.png", width: 80%),
+    image("../figures/symbol_pin_spec_veriloga.png", width: 60%),
     caption: [Symbol生成设置],
   ) <symbol_pin_spec_veriloga>
 + 如@symbol_veriloga 所示，新的Symbol视图将会弹出。点击`Check & Save`按钮#box(baseline: 20%, image("../figures/button_check_and_save.png"), width: 12pt)保存Symbol。然后点击右上角的`X`按钮关闭Symbol视图和VerilogA编辑器。
@@ -83,22 +83,22 @@ Cadence Virtuoso支持以上*全部*三种语言进行器件建模。但其中Ve
 - 相对更稳妥的方法是改进仿真的*算法*。
   + 鼠标左键单击在@ade_explorer 中黄框部分的`Setup`->`High-Performance Simulation`，弹出如@ade_explorer_spectre 所示的对话框。
     #figure(
-      image("../figures/ade_explorer_spectre.png", width: 50%),
+      image("../figures/ade_explorer_spectre.png", width: 60%),
       caption: [高性能仿真设置],
     ) <ade_explorer_spectre>
   + 在`Simulation Performance Mode`属性栏选择`Spectre X`，在`Preset`属性栏选择`CX`，如@ade_explorer_spectre_x 所示。点击`OK`按钮即可。
     #figure(
-      image("../figures/ade_explorer_spectre_x.png", width: 50%),
+      image("../figures/ade_explorer_spectre_x.png", width: 60%),
       caption: [Spectre X设置],
     ) <ade_explorer_spectre_x>
   + 如果`Simulation Performance Mode`属性栏中没有`Spectre X`选项，可以转而使用APS。在`Simulation Performance Mode`属性栏选择`APS`，其余选项保持默认，如@ade_explorer_aps 所示。点击`OK`按钮即可。
     #figure(
-      image("../figures/ade_explorer_aps.png", width: 50%),
+      image("../figures/ade_explorer_aps.png", width: 60%),
       caption: [APS设置],
     ) <ade_explorer_aps>
 - 在transient analysis设置中勾选`Transient Noise`会对电路中的*噪声*进行仿真，这会*极大减慢*仿真进度。如果仅对电路进行*功能性验证*或*非线性*仿真，可以不勾选`Transient Noise`。
 - 使用*参数扫描*时，每个参数值都会进行一次仿真，因此参数值越多，仿真时间越长。如果同时开启*多个任务*，进行多个参数值的仿真，就能减少仿真排队时间。在@ade_explorer 中黄框部分的`Setup`->`Job Setup`，弹出如@ade_explorer_job_setup 所示的对话框。在`Max. Jobs`属性栏输入你希望同时进行的仿真数，建议该值选取不要超过5，以免给服务器造成太大压力。其余选项保持默认。点击`OK`按钮即可。
   #figure(
-    image("../figures/ade_explorer_job_setup.png", width: 50%),
+    image("../figures/ade_explorer_job_setup.png", width: 40%),
     caption: [多任务设置],
   ) <ade_explorer_job_setup>

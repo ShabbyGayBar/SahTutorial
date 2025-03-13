@@ -27,7 +27,7 @@
 + 在库管理器 (Library Manager) 界面中，点击菜单栏的`File`->`New`->`Library`
 + 在弹出的如@new_lib 所示的对话框中，创建一个新的设计库 (Library)，命名为`SARADC`。
   #figure(
-    image("../figures/new_lib.png", width: 80%),
+    image("../figures/new_lib.png", width: 50%),
     caption: [创建新的设计库],
   ) <new_lib>
 + 点击`OK`按钮，创建新的设计库 (Library)。
@@ -39,7 +39,7 @@
 + 在库管理器 (Library Manager) 界面中，点击菜单栏的`File`->`New`->`Cell View`，创建一个新的单元 (CellView)。
 + 在弹出的如@cell_view_schematic 所示的对话框中，将Cell命名为`sample_switch`，选择`Schematic`类型。点击`OK`按钮。
   #figure(
-    image("../figures/cell_view_schematic.png", width: 50%),
+    image("../figures/cell_view_schematic.png", width: 30%),
     caption: [创建新的Schematic电路视图],
   ) <cell_view_schematic>
   如@schematic_ideal_switch_empty 所示，新的Schematic视图将会弹出。
@@ -50,12 +50,12 @@
 + 在Schematic视图中，按键盘上的`i`键 (注意大小写，下同。若仍不注意使用了其他快捷键，可按键盘上的`esc`键取消)，打开`Add Instance`对话框。
 + 在弹出的如@add_instance_analogLib_switch 所示的对话框中，点击`Browse`按钮。
   #figure(
-    image("../figures/add_instance_analogLib_switch.png", width: 50%),
+    image("../figures/add_instance_analogLib_switch.png", width: 40%),
     caption: [添加实例],
   ) <add_instance_analogLib_switch>
 + 在弹出的如@lib_browser_analogLib_switch 所示的对话框中，选择`Library`列中的`analogLib`，`Cell`列中的`switch`，`View`列中的`symbol`。点击键盘上的`Enter`键。
   #figure(
-    image("../figures/lib_browser_analogLib_switch.png", width: 80%),
+    image("../figures/lib_browser_analogLib_switch.png", width: 60%),
     caption: [选择sample_switch单元],
   ) <lib_browser_analogLib_switch>
   此时注意到Schematic视图中已经出现了一个如@analogLib_switch_shape 所示的，随鼠标拖动的黄色理想开关轮廓。
@@ -80,7 +80,7 @@
 + 在弹出的如@add_instance_analogLib_switch 所示的对话框中，点击`Browse`按钮。
 + 在弹出的如@lib_browser_analogLib_res 所示的对话框中，选择`Library`列中的`analogLib`，`Cell`列中的`res`，`View`列中的`symbol`。点击键盘上的`Enter`键。
   #figure(
-    image("../figures/lib_browser_analogLib_res.png", width: 80%),
+    image("../figures/lib_browser_analogLib_res.png", width: 60%),
     caption: [选择res单元],
   ) <lib_browser_analogLib_res>
 + 点击Schematic视图中的空白处，将理想电阻实例化。如@schematic_analogLib_res 所示。按键盘上的`esc`键关闭对话框。
@@ -158,12 +158,12 @@
 + 此时再次点击`Check & Save`按钮#box(baseline: 20%, image("../figures/button_check_and_save.png"), width: 12pt)，仍然会弹出如@schematic_check 所示的警告，这是由于`vdd`端口仍然悬空。但这个节点在之后还会用到，因此需要告诉电路检查器将其忽略。在Schematic视图中，按键盘上的`i`键，打开`Add Instance`对话框。
 + 在弹出的如@add_instance_basic_noConn 所示的对话框中，点击`Browse`按钮。
   #figure(
-    image("../figures/add_instance_analogLib_switch.png", width: 50%),
+    image("../figures/add_instance_analogLib_switch.png", width: 40%),
     caption: [添加实例],
   ) <add_instance_basic_noConn>
 + 在弹出的如@lib_browser_basic_noConn 所示的对话框中，选择`Library`列中的`basic`，`Cell`列中的`noConn`，`View`列中的`symbol`。点击键盘上的`Enter`键。
   #figure(
-    image("../figures/lib_browser_basic_noConn.png", width: 80%),
+    image("../figures/lib_browser_basic_noConn.png", width: 60%),
     caption: [选择noConn单元],
   ) <lib_browser_basic_noConn>
 + 点击Schematic视图中的空白处，将`noConn`实例化并与`vdd`端口相连。如@schematic_ideal_switch 所示。
@@ -175,7 +175,7 @@
 + 在Schematic视图中，点击菜单栏的`Create`->`CellView`->`From CellView`，定制Symbol，即采样开关在原理图中调用时的外观。在弹出的对话框中点击`OK`按钮。
 + 在弹出的对话框中，修改`Pin Specifications`中的端口位置使之如@symbol_pin_spec_schematic 所示 (也可以保持默认，但下一步的外观会有所不同，功能上没有影响)。点击`OK`按钮。
   #figure(
-    image("../figures/symbol_pin_spec_veriloga.png", width: 80%),
+    image("../figures/symbol_pin_spec_veriloga.png", width: 60%),
     caption: [Symbol生成设置],
   ) <symbol_pin_spec_schematic>
 + 如@symbol_schematic 所示，新的Symbol视图将会弹出。点击`Check & Save`按钮#box(baseline: 20%, image("../figures/button_check_and_save.png"), width: 12pt)保存Symbol。然后点击右上角的`X`按钮关闭Symbol视图和Schematic视图。
@@ -189,18 +189,18 @@
 + 在库管理器 (Library Manager) 窗口中，点击菜单栏的`File`->`New`->`Cell View`，创建一个新的单元 (CellView)。
 + 在弹出的如@cell_view_schematic_tb 所示的对话框中，将Cell命名为`TB_sample_switch`，选择`Schematic`类型。点击`OK`按钮。
   #figure(
-    image("../figures/cell_view_schematic_tb.png", width: 50%),
+    image("../figures/cell_view_schematic_tb.png", width: 40%),
     caption: [创建新的Schematic电路视图],
   ) <cell_view_schematic_tb>
 + 在Schematic视图中，按键盘上的`i`键 (注意大小写，下同。若仍不注意使用了其他快捷键，可按键盘上的`esc`键取消)，打开`Add Instance`对话框。
 + 在弹出的如@add_instance_analogLib_vdc 所示的对话框中，点击`Browse`按钮。
   #figure(
-    image("../figures/add_instance_analogLib_switch.png", width: 50%),
+    image("../figures/add_instance_analogLib_switch.png", width: 40%),
     caption: [添加实例],
   ) <add_instance_analogLib_vdc>
 + 在弹出的如@lib_browser_analogLib_vdc 所示的对话框中，选择`Library`列中的`analogLib`，`Cell`列中的`vdc`，`View`列中的`symbol`。点击键盘上的`Enter`键。
   #figure(
-    image("../figures/lib_browser_analogLib_vdc.png", width: 80%),
+    image("../figures/lib_browser_analogLib_vdc.png", width: 60%),
     caption: [选择vdc单元],
   ) <lib_browser_analogLib_vdc>
 + 点击Schematic视图中的空白处，将直流电压源实例化。
@@ -215,7 +215,7 @@
   在Schematic视图中，按键盘上的`l` (小写L) 键，打开`Add Label`对话框。
 + 在弹出的如@add_label_tb 所示的对话框中，输入`clk`，点击Schematic视图中`vpulse`(理想时钟源)上方的孤立导线。此后即可用`clk`指代该节点。
   #figure(
-    image("../figures/add_label_tb.png", width: 50%),
+    image("../figures/add_label_tb.png", width: 30%),
     caption: [添加标签],
   ) <add_label_tb>
 + 仿照上一步骤，在理想正弦波源、理想电容、理想直流电压源上方导线添加`in`、`out`、`vdd`的label。
@@ -231,25 +231,25 @@
   鼠标左键单击理想直流电压源，按键盘上的`q`键，打开`Edit Properties`对话框。在`DC Voltage`属性栏输入`vdd`，如@edit_properties_analogLib_vdc 所示。点击`OK`按钮。\
   该直流电压源将会持续输出`vdd`#unit("V") 的电源电压。
   #figure(
-    image("../figures/edit_properties_analogLib_vdc.png", width: 60%),
+    image("../figures/edit_properties_analogLib_vdc.png", width: 50%),
     caption: [`vdc`的Edit Properties对话框],
   ) <edit_properties_analogLib_vdc>
 + 鼠标左键单击理想时钟源，按键盘上的`q`键，打开`Edit Properties`对话框。在`Voltage 0`属性栏输入`vdd`，`Period`属性栏输入`tClk`，`Rise Time`和`Fall Time`属性栏输入`trf`，如@edit_properties_analogLib_vpulse 所示。点击`OK`按钮。\
   该理想时钟源将会输出一个周期为`tClk`#unit("s") 的方波信号，其上升沿和下降沿时间为`trf`#unit("s")。
   #figure(
-    image("../figures/edit_properties_analogLib_vpulse.png", width: 60%),
+    image("../figures/edit_properties_analogLib_vpulse.png", width: 50%),
     caption: [`vpulse`的Edit Properties对话框],
   ) <edit_properties_analogLib_vpulse>
 + 鼠标左键单击理想正弦波源，按键盘上的`q`键，打开`Edit Properties`对话框。在`Amplitude`属性栏输入`ampIn`，`Frequency`属性栏输入`fIn`，在`Offset Voltage`属性栏输入`vCm`，如@edit_properties_analogLib_vsin 所示。点击`OK`按钮。\
   该理想正弦波源将会输出幅值为`ampIn`#unit("V")、频率为`fIn`#unit("Hz") 的正弦波信号，其直流偏置电压为`vCm`#unit("V")。
   #figure(
-    image("../figures/edit_properties_analogLib_vsin.png", width: 60%),
+    image("../figures/edit_properties_analogLib_vsin.png", width: 50%),
     caption: [`vsin`的Edit Properties对话框],
   ) <edit_properties_analogLib_vsin>
 + 鼠标左键单击理想电容，按键盘上的`q`键，打开`Edit Properties`对话框。在`Capacitance`属性栏输入`cL`，如@edit_properties_analogLib_cap 所示。点击`OK`按钮。\
   该理想电容将会模拟一个电容值为`cL`#unit("F") 的电容。
   #figure(
-    image("../figures/edit_properties_analogLib_cap.png", width: 60%),
+    image("../figures/edit_properties_analogLib_cap.png", width: 50%),
     caption: [`cap`的Edit Properties对话框],
   ) <edit_properties_analogLib_cap>
 + 此时点击`Check & Save`按钮#box(baseline: 20%, image("../figures/button_check_and_save.png"), width: 12pt)，保存电路图。
@@ -265,7 +265,7 @@
   ) <create_ade0>
 + 在弹出的如@create_ade1 所示的对话框中。点击`OK`按钮，创建ADE Explorer。
   #figure(
-    image("../figures/create_ade1.png", width: 50%),
+    image("../figures/create_ade1.png", width: 30%),
     caption: [创建ADE Explorer maestro view],
   ) <create_ade1>
 + 新创建的ADE Explorer界面如@ade_explorer 所示。其中红框部分为仿真设置区域，蓝框部分为仿真结果区域，绿框部分为仿真控制区域，黄框部分为工具和菜单栏。
@@ -278,7 +278,7 @@
 
 + 在ADE Explorer界面中，鼠标右键单击`Design Variables`，在右键菜单中选择`Copy From CellView`，发现`Design Variables`中已经自动添加了`vdd`、`tClk`、`trf`、`ron`、`ampIn`、`fIn`、`vCm`、`cL`等变量。如@ade_explorer_design_variables 所示，为各变量赋值。
   #figure(
-    image("../figures/ade_explorer_design_variables.png", width: 50%),
+    image("../figures/ade_explorer_design_variables.png", width: 30%),
     caption: [Design Variables设置],
   ) <ade_explorer_design_variables>
 + 鼠标左键单击@ade_explorer_design_variables 中的`Clike to add variable`，在弹出的对话框中，在`Name`属性栏输入`N`，在`Value`属性栏输入`256`，点击`Add`按钮。再在`Name`属性栏输入`M`，在`Value`属性栏输入`1`，点击`Add`按钮。此时注意到@ade_explorer_design_variables 中的变量列表中已经添加了变量`N`和`M`。
@@ -298,7 +298,7 @@
 + 在ADE Explorer界面中，鼠标左键单击@ade_explorer 红框中`Analyses`栏下的`Click to add analysis`。\
   在弹出的对话框中在`Analysis`属性栏选择`tran`，在`Stop Time`属性栏输入仿真时长，由于我们取$N$为256，$f_"clk"$为#qty(100, "kHz")，因此仿真时长应至少为$256/f_"clk"= #qty(2.56, "ms")$。为留部分余量，这里我们输入2.6m。在`Accuracy Defaults (errpreset)`属性栏选择`conservative`。勾选`Transient Noise`，在`Noise Analysis`栏下的`Noise Fmax`属性栏输入1G。点击`OK`按钮。
   #figure(
-    image("../figures/ade_explorer_add_analysis_tran.png", width: 50%),
+    image("../figures/ade_explorer_add_analysis_tran.png", width: 40%),
     caption: [添加transient analysis],
   ) <ade_explorer_add_analysis_tran>
 + 在ADE Explorer界面中，鼠标左键单击@ade_explorer 黄框中的`Outputs`->`To Be Plotted`->`Select On Design`。\
@@ -369,7 +369,7 @@
 
 + 在ADE Explorer界面中，鼠标左键单击@ade_explorer 绿框中的运行仿真按钮#box(baseline: 20%, image("../figures/button_run.png"), width: 12pt)。如@ade_explorer_log 所示的仿真log窗口弹出，仿真开始运行。
   #figure(
-    image("../figures/ade_explorer_log.png", width: 60%),
+    image("../figures/ade_explorer_log.png", width: 40%),
     caption: [仿真log窗口],
   ) <ade_explorer_log>
 + 一段时间后仿真完成，此时如@ade_explorer_plot 所示的仿真结果窗口将会弹出，内容为`out`节点的波形图。\
@@ -393,7 +393,7 @@
 + 鼠标左键单击@ade_explorer_plot_zoom_2 中的`out`节点对应的波形，在顶部菜单栏中点击`Measurements`->`Spectrum`，右侧弹出如@ade_explorer_spectrum_setup 所示的频谱分析窗口。\
   在`FFT input method`属性栏选择`Calculate Start Time`，`Start/Stop Time`的第二个属性栏输入`2.595m`，`Sample Count/Freq`属性栏分别输入256，100k，接着点击`Start/End Freq`属性栏的按钮#box(baseline: 20%, image("../figures/button_auto_cal.png"), width: 12pt)，如@ade_explorer_spectrum_setup 所示。点击`OK`按钮。
 #figure(
-  image("../figures/ade_explorer_spectrum_setup.png", width: 40%),
+  image("../figures/ade_explorer_spectrum_setup.png", width: 30%),
   caption: [频谱分析设置窗口],
 ) <ade_explorer_spectrum_setup>
 + 此时如@ade_explorer_spectrum_plot 所示的`out`节点波形的FFT频谱窗口将会弹出。\
@@ -411,7 +411,7 @@
 
 === 扫描参数仿真 <sweep>
 
-+ 在ADE Explorer界面中，鼠标左键双击@ade_explorer_design_variables 中的`ron`，将这一栏改为`1k,2k,5k,10k`，如@ade_explorer_design_variables_sweep 所示。
++ 在ADE Explorer界面中，鼠标左键双击@ade_explorer_design_variables 中的`ron`，将这一栏改为\ `1k,2k,5k,10k`，如@ade_explorer_design_variables_sweep 所示。
   #figure(
     image("../figures/ade_explorer_design_variables_sweep.png", width: 40%),
     caption: [参数扫描设置],
@@ -475,7 +475,7 @@
   如果未创建过该CellView，请参考@ideal_switch 的第1-2和15-18步创建原理图并添加端口，然后跳过下一步进入第3步。
 + 在修改原理图之前先对当前的CellView进行保存。在Schematic视图中，按键盘上的`Ctrl`+`s`键，在弹出的对话框中，将`View`属性栏中的`schematic`改为`schematic_0`，如@schematic_save 所示。点击`OK`按钮。
   #figure(
-    image("../figures/schematic_save.png", width: 50%),
+    image("../figures/schematic_save.png", width: 30%),
     caption: [保存Schematic代码],
   ) <schematic_save>
 + 接下来删除电路中的器件和连线。在Schematic视图中，按键盘上的`delete`键进入删除模式，光标右下角出现X形，鼠标左键单击需要删除的器件或连线，只保留`vdd`上的`noConn`。删除后如@schematic_delete 所示。
@@ -487,7 +487,7 @@
 + 在弹出的如@add_instance_analogLib_switch 所示的对话框中，点击`Browse`按钮。
 + 在弹出的如@lib_browser_n18 所示的对话框中，展开`Library`列中的`SMIC_LIB`并选择其中的`smic18mmrf`，`Cell`列中的`n18`，`View`列中的`symbol`。点击键盘上的`Enter`键。
   #figure(
-    image("../figures/lib_browser_n18.png", width: 80%),
+    image("../figures/lib_browser_n18.png", width: 60%),
     caption: [选择NMOS器件],
   ) <lib_browser_n18>
 + 点击Schematic视图中的空白处，将NMOS实例化。如@schematic_n18 所示。然后按键盘上的`esc`键关闭对话框。
@@ -515,7 +515,7 @@
 + 在库管理器 (Library Manager) 窗口中，找到`SARADC` Library->`TB_sample_switch` Cell->`maestro` View，鼠标左键双击该CellView，打开ADE Explorer。
 + 修改`Design Variables`中的`vdd`、`tClk`、`trf`、`ron`、`ampIn`、`fIn`、`vCm`、`cL`的值为与@ade_explorer_design_variables_simple_switch 中相同的值。
   #figure(
-    image("../figures/ade_explorer_design_variables_simple_switch.png", width: 40%),
+    image("../figures/ade_explorer_design_variables_simple_switch.png", width: 30%),
     caption: [Design Variables设置],
   ) <ade_explorer_design_variables_simple_switch>
 + 勾选所有输出信号的`Plot`勾选框，如@ade_explorer_simple_switch_output_setup 所示。
