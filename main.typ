@@ -26,12 +26,13 @@
 )
 
 #show: show-cn-fakebold
-#show emph: text.with(font: ziti.kaiti)
-#show strong: text.with(font: ziti.heiti)
 #set text(
   lang: "zh",
   font: ziti.songti
 )
+#show raw: set text(font: ziti.dengkuan, size: 12pt)
+#show emph: text.with(font: ziti.kaiti)
+#show strong: text.with(font: ziti.heiti)
 
 #include "contents/intro.typ"
 #include "contents/steps.typ"
