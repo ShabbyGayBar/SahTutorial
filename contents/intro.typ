@@ -11,16 +11,16 @@
   - 电阻、电容等基本元件的特性。
   - 一阶*RC网络*的低通频率响应。
 - 了解*分贝* (#unit("dB"))的定义。
-- 了解MOS管的*传输特性曲线，输出特性曲线*，以及其可以作为开关使用的原理#footnote[建议参考https://shuiyuan.sjtu.edu.cn/t/topic/127792/32]。
-- 了解*傅里叶变换* (Fourier Transform) 和频谱分析 (Spectrum Analysis) 的基本概念#footnote[建议参考https://shuiyuan.sjtu.edu.cn/t/topic/127792/117]
-- 了解噪声，尤其是*$(k T)/C$热噪声*的概念#footnote[建议参考https://shuiyuan.sjtu.edu.cn/t/topic/127792/289]
+- 了解MOS管的*传输特性曲线，输出特性曲线*，以及其可以作为开关使用的原理#footnote[建议参考#link("https://shuiyuan.sjtu.edu.cn/t/topic/127792/32")]。
+- 了解*傅里叶变换* (Fourier Transform) 和频谱分析 (Spectrum Analysis) 的基本概念#footnote[建议参考#link("https://shuiyuan.sjtu.edu.cn/t/topic/127792/117")]
+- 了解噪声，尤其是*$(k T)/C$热噪声*的概念#footnote[建议参考#link("https://shuiyuan.sjtu.edu.cn/t/topic/127792/289")]
 - 了解ADC相关指标的定义
   - *SNR* (Signal-to-Noise Ratio)
   - *SINAD* (Signal-to-Noise and Distortion Ratio)
   - *ENOB* (Effective Number of Bits)
   - *SFDR* (Spurious-Free Dynamic Range)
   - *THD* (Total Harmonic Distortion)
-- 了解*栅压自举采样开关电路* (Bootstrapped Switch) 的基本原理#footnote[建议参考https://zhuanlan.zhihu.com/p/564837987]。
+- 了解*栅压自举采样开关电路* (Bootstrapped Switch) 的基本原理#footnote[建议参考#link("https://zhuanlan.zhihu.com/p/564837987")]。
 
 = 目的
 
