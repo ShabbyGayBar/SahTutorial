@@ -30,7 +30,17 @@
     image("../figures/new_lib.png", width: 50%),
     caption: [创建新的设计库],
   ) <new_lib>
-+ 点击`OK`按钮，创建新的设计库 (Library)。
++ 点击`OK`按钮，弹出如@new_lib_attach 所示的对话框。在选项中选择`Attach to an existing technology library`，点击`OK`按钮。\
+  这将使得我们在设计时只调用特定工艺库中的器件，以免出现不同工艺库之间的兼容性问题。
+  #figure(
+    image("../figures/new_lib_attach.png", width: 40%),
+    caption: [将新设计库绑定到现有工艺库],
+  ) <new_lib_attach>
++ 在弹出的如@attach_tech_lib 所示的对话框中，选择`Technology Library`列中的`smic18mmrf`，点击`OK`按钮，创建新的设计库 (Library)。
+  #figure(
+    image("../figures/attach_tech_lib.png", width: 40%),
+    caption: [选择工艺库],
+  ) <attach_tech_lib>
 
 == 创建理想采样开关电路 <ideal_switch>
 
