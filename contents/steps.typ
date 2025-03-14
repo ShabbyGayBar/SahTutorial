@@ -36,11 +36,16 @@
     image("../figures/new_lib_attach.png", width: 40%),
     caption: [将新设计库绑定到现有工艺库],
   ) <new_lib_attach>
-+ 在弹出的如@attach_tech_lib 所示的对话框中，选择`Technology Library`列中的`smic18mmrf`，点击`OK`按钮，创建新的设计库 (Library)。
++ 在弹出的如@attach_tech_lib 所示的对话框中，选择`Technology Library`列中的`smic18mmrf`，点击`OK`按钮。
   #figure(
     image("../figures/attach_tech_lib.png", width: 40%),
     caption: [选择工艺库],
   ) <attach_tech_lib>
++ 此时的库管理器窗口如@lib_manager_new_lib 所示。在左侧的`Library`栏中，可以看到新建的`SARADC`库。
+  #figure(
+    image("../figures/lib_manager_new_lib.png", width: 80%),
+    caption: [新建的设计库],
+  ) <lib_manager_new_lib>
 
 == 创建理想采样开关电路 <ideal_switch>
 
