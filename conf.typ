@@ -55,3 +55,14 @@
   // 这一行分别是「Menlo(MacOS 等宽英文字体)」、「Courier New(等宽英文字体)」、「黑体（MacOS）」、「黑体（Windows）」、「华文黑体」
   dengkuan: ("Menlo", "Courier New", "Heiti SC", "SimHei", "STHeiti"),
 )
+
+// Appendix environment setup
+#let appendix(body) = {
+  pagebreak()
+  counter(heading).update(0) // Reset the heading counter
+  set heading(
+    numbering: "A.1.",
+  )
+
+  body
+}
