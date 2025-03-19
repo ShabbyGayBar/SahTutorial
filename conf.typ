@@ -18,6 +18,12 @@
 // CJK bold font support
 #import "@preview/cuti:0.2.1": show-cn-fakebold
 
+// Heading numbering support
+#import "@preview/numbly:0.1.0": numbly
+
+// CJK text size support
+#import "@preview/pointless-size:0.1.1": zh
+
 // Tip message box setup
 #let tip(body, title: "", color: blue) = {
   showybox(
@@ -56,12 +62,64 @@
   dengkuan: ("Menlo", "Courier New", "Heiti SC", "SimHei", "STHeiti"),
 )
 
+#let mainmatter(
+  lang: "zh",
+  body,
+) = {
+  set page(numbering: "1")
+  counter(page).update(1)
+  set par(justify: true, linebreaks: "optimized")
+
+  show: show-cn-fakebold
+  set text(
+    lang: lang,
+    size: zh(5),
+    font: ziti.songti
+  )
+  show raw: set text(font: ziti.dengkuan, size: 10pt)
+  show emph: text.with(font: ziti.kaiti)
+  show strong: text.with(font: ziti.heiti)
+  // Display inline code in a small box that retains the correct baseline.
+  show raw.where(block: false): box.with(
+    fill: luma(250).darken(2%),
+    inset: (x: 3pt, y: 0pt),
+    outset: (y: 3pt),
+    radius: 2pt,
+  )
+
+  show: codly-init.with()
+  codly(
+    languages: codly-languages,
+  )
+
+  set heading(numbering: "1.")
+  set math.equation(numbering: "(1)")
+
+  body
+}
+
 // Appendix environment setup
-#let appendix(body) = {
+#let appendix(
+  title: "附录",
+  body,
+) = {
   pagebreak()
+  align(center)[
+    #heading( // Appendix general title
+      level: 1,
+      numbering: none, // no prefix
+      title,
+    )
+  ]
   counter(heading).update(0) // Reset the heading counter
   set heading(
-    numbering: "A.1.",
+    offset: 1, // Scramble everything in the appendix environment under the general title
+    numbering: numbly(
+      "", // Appendix general title, no prefix
+      "{2:A}.", // Actual First level
+      "{2:A}.{3}.", // Lower levels use arabic numerals
+      "{2:A}.{3}.{4}.",
+    )
   )
 
   body
