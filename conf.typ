@@ -89,6 +89,7 @@
 
   show: codly-init.with()
   codly(
+    display-name: false,
     languages: codly-languages,
   )
 
