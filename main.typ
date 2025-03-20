@@ -2,7 +2,8 @@
 
 #set document(
   title: [采样开关仿真],
-  author: "EE503-16 工程实践与科技创新II",
+  author: "Brian Li",
+  description: "EE503-16 工程实践与科技创新II lab 4",
 )
 
 #show: mainmatter
