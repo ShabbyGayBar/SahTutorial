@@ -679,7 +679,7 @@
 + 在Schematic视图中，按键盘上的`i`键，打开`Add Instance`对话框。\
   在弹出的如@add_instance_analogLib_switch 所示的对话框中，点击`Browse`按钮。\
   在弹出的Library Browser对话框中，展开`Library`列中的`SMIC_LIB`并选择其中的`scc018ug_uhd_rvt_oa`，`Cell`列中的`INUHDV1`，`View`列中的`symbol`。点击键盘上的`Enter`键。
-+ 点击Schematic视图中的空白处，将$1 times$反相器实例化。同理，再添加$4 times$反相器，如@schematic_inv 所示。然后按键盘上的`esc`键关闭对话框。
++ 点击Schematic视图中的空白处，将$1 times$反相器实例化。同理，再添加$4 times$反相器`INUHDV4`，如@schematic_inv 所示。然后按键盘上的`esc`键关闭对话框。
   #figure(
     image("figures/schematic_inv.png", width: 80%),
     caption: [反相器实例化],
