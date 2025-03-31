@@ -12,7 +12,7 @@
 #import "@preview/showybox:2.0.4": showybox
 
 // Code listing support
-#import "@preview/codly:1.2.0": *
+#import "@preview/codly:1.3.0": *
 #import "@preview/codly-languages:0.1.1": *
 
 // CJK bold font support
