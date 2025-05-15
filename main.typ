@@ -454,7 +454,7 @@
     caption: [框选部分波形放大后的结果],
   ) <ade_explorer_plot_zoom_2>
 + 鼠标左键单击@ade_explorer_plot_zoom_2 中的`out`节点对应的波形，在顶部菜单栏中点击`Measurements`->`Spectrum`，右侧弹出如@ade_explorer_spectrum_setup 所示的频谱分析窗口。\
-  在`FFT input method`属性栏选择`Calculate Start Time`，`Start/Stop Time`的第二个属性栏输入`2.595m`，`Sample Count/Freq`属性栏分别输入256，100k，接着点击`Start/End Freq`属性栏的按钮#box(baseline: 20%, image("figures/button_auto_cal.png"), width: 12pt)，如@ade_explorer_spectrum_setup 所示。点击`OK`按钮。
+  在`FFT input method`属性栏选择`Calculate Start Time`，`Start/Stop Time`的第二个属性栏输入`2.595m`，`Sample Count/Freq`属性栏分别输入256，100k，接着点击`Start/End Freq`属性栏的按钮#box(baseline: 20%, image("figures/button_auto_cal.png"), width: 12pt)，如@ade_explorer_spectrum_setup 所示。点击`plot`按钮。
 #figure(
   image("figures/ade_explorer_spectrum_setup.png", width: 30%),
   caption: [频谱分析设置窗口],
