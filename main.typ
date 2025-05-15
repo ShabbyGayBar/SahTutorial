@@ -345,7 +345,7 @@
     image("figures/ade_explorer_design_variables.png", width: 30%),
     caption: [Design Variables设置],
   ) <ade_explorer_design_variables>
-+ 鼠标左键单击@ade_explorer_design_variables 中的`Clike to add variable`，在弹出的对话框中，在`Name`属性栏输入`N`，在`Value`属性栏输入`256`，点击`Add`按钮。再在`Name`属性栏输入`M`，在`Value`属性栏输入`1`，点击`Add`按钮。此时注意到@ade_explorer_design_variables 中的变量列表中已经添加了变量`N`和`M`。
++ 鼠标左键单击@ade_explorer_design_variables 中的`Clike to add variable`，在弹出的对话框中，在`Name`属性栏输入`N`，在`Value`属性栏输入`256`，点击`Add`按钮。再在`Name`属性栏输入`M`，在`Value`属性栏输入`3`，点击`Add`按钮。此时注意到@ade_explorer_design_variables 中的变量列表中已经添加了变量`N`和`M`。
   #grid(
     columns: 2,
     rows: 2,
