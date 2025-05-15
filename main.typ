@@ -758,7 +758,7 @@
 
 Cadence Virtuoso支持以上*全部*三种语言进行器件建模。但其中Verilog和Verilog-AMS在仿真时都依赖一种叫做*AMS*的专用仿真器，其仿真运行过程中需要不断将数字逻辑转化为各种电气特性，这*拖累*了仿真速度。相比之下，VerilogA则是一种"原生"的模拟语言，可以直接使用*SPICE*仿真器进行仿真，速度更快。
 
-尽管如此，由于模拟工程师在数量上远远不如数字工程师，VerilogA的使用范围相对较窄，社区也相对萎缩。以至于在简体中文互联网上很难找到关于VerilogA的系统性的教程#footnote[有条件的同学建议参考#link("https://verilogams.com")]，你甚至没法在VS Code中找到一个支持给VerilogA做语法高亮的插件。
+尽管如此，由于模拟工程师在数量上远远不如数字工程师，VerilogA的使用范围相对较窄，社区也相对萎缩。以至于在简体中文互联网上很难找到关于VerilogA的系统性的教程#footnote[有条件的同学建议参考#link("https://verilogams.com")]。
 
 也正是由于VerilogA的冷门，使得我决定将这个教程放在最后的附录中。
 
